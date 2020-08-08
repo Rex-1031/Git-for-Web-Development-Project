@@ -1,4 +1,4 @@
-https://codepen.io/Rex1031/pen/XWXbREr
+codepen project: https://codepen.io/Rex1031/pen/bGpNgoR
 
   1. What is Semantic HTML? 
 	Semantic HTML is HTML that will be visible on the page, it is vital for accessibility and SEO. 
@@ -10,7 +10,7 @@ https://codepen.io/Rex1031/pen/XWXbREr
 	Attributes provide addition information about an element. It is placed in the start tag. 
 
 4. What is the h1 tag used for? How many times should I use it on a page?
-	the h1 tag defines the heading of a web page. It is suggested to only use one h1 tag per page. 
+	the h1 tag defines the heading of a web page. Since its like a chapter heading in a book It's good practice to only use one h1 tag per page. 
 
 5. Name two tags that have required attributes
 	the <a> tag and the <img> tag.
@@ -77,6 +77,7 @@ https://codepen.io/Rex1031/pen/XWXbREr
 	Its when you select an element that is embedded within another element. When you are trying to target the child element of a parent specifically. 
 
 23. How do you select all links within a div with the class of sidebar?
+		.sidebar div a
 
 24. What is a pseudo selector?
 	It's used to define special state of an element
@@ -100,6 +101,7 @@ https://codepen.io/Rex1031/pen/XWXbREr
 	You would contain your comment(s) within /* */
 
 31. How do I find out what file I am in, when I am using the command line?
+	$ pwd
  	
 32. Using the command line - how do I see a list of files/folders in my current folder?
   	you would type: ls
@@ -129,6 +131,21 @@ Stretch Questions
 		Inline only takes up space required to show data, and does not start on a new line. 
 
     2. What happens when an element is positioned absolutely? 
+	the element will be placed in relation to it's nearest ancestor
+	
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
-    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+		Block Elements: <p>  <div> <nav>
+		Inline Elements: <a> <button>
+		Inline-Block Elements: <img>
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+	
+	Every HTML element is wrapped within a box. The box consist of a margin in the outermost potion of the box. Magins make space outside of the borders and is 			not visible. The inner section of the box model is the border. The border section creates a border around the padding and content, the boder can be formatted is 	and is visible around the element.  Past the border is the section for padding.  Padding creates space around the content and is not visible. The center of the 		box model contains the content. The content is where the elements appear.
+
+	The box-sizing property is considered the the fix, of the three options availible for this property, border-box is used frequently. It will for example, force
+	all child divs regardless of their widths to fit within a parent div's width. 
+
+	
+
+		
